@@ -1,14 +1,14 @@
 package com.example.hangmanpro
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_registration.*
 
 class RegistrationActivity : AppCompatActivity() {
@@ -20,10 +20,31 @@ class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
+        supportActionBar!!.hide()
         mAuth = FirebaseAuth.getInstance()
         db = FirebaseDatabase.getInstance()
         dbRef = db.getReference("users")
+        var faultyNickname: Boolean = false
+        var list: MutableList<String> = mutableListOf()
 
+        dbRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                if (dataSnapshot!!.exists()){
+                    for (i in dataSnapshot.children){
+                        list.add(i.child("nickname").value.toString())
+                    }
+                        println(list)
+
+                    faultyNickname = true
+
+                }
+
+
+            }
+            override fun onCancelled(error: DatabaseError) {
+
+            }
+        })
 
 
         btnRegister.setOnClickListener {
@@ -31,6 +52,7 @@ class RegistrationActivity : AppCompatActivity() {
             val email: String = emailRegister.text.toString()
             val password: String = password1.text.toString()
             val passwoordConfirm: String = password2.text.toString()
+
 
             if(TextUtils.isEmpty(nickname)||TextUtils.isEmpty(email) || TextUtils.isEmpty(password) || TextUtils.isEmpty(passwoordConfirm))
                 {Toast.makeText(this, "Fill empty fields", Toast.LENGTH_SHORT).show()}
@@ -41,22 +63,25 @@ class RegistrationActivity : AppCompatActivity() {
             else if (passwoordConfirm != password) {
                 Toast.makeText(this, "Passwords don't match", Toast.LENGTH_SHORT).show()
             }
-
+            else if (nickname.length < 3 || nickname.length > 10 ) {
+                Toast.makeText(this, "Nickname length must be between 3 and 10 characters", Toast.LENGTH_SHORT).show()
+            }else if (nickname in list){
+                Toast.makeText(this, "Nickname already exists", Toast.LENGTH_LONG).show()
+            }
             else{
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener { task ->
                     if (task.isSuccessful)
                     {
-                        val userId = dbRef.push().key
-                        val user = User(userId!!, email, nickname)
-                        dbRef.child(userId).setValue(user).addOnCompleteListener{
+                        val user = User(nickname, email)
+                        dbRef.child(nickname).setValue(user).addOnCompleteListener{
                             Toast.makeText(this,"Registration Success!",Toast.LENGTH_LONG)
                         }
-                        val intent = Intent(this, LoginActivity::class.java)
-                        startActivity(intent)
+
+
                         finish()
                     }
                     else {
-                        Toast.makeText(this, "Something went wrong",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Email already registered or invalid input",Toast.LENGTH_SHORT).show()
 
                     }
 

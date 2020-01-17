@@ -7,11 +7,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/btnCreateChallenge"
@@ -25,4 +26,16 @@
             android:layout_height="wrap_content"
             android:text="Take A Challenge" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/forTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
