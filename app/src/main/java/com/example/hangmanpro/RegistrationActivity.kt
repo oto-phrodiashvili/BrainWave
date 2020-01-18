@@ -1,11 +1,10 @@
 package com.example.hangmanpro
 
-import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import com.example.hangmanpro.com.example.hangmanpro.User
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -24,7 +23,7 @@ class RegistrationActivity : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
         db = FirebaseDatabase.getInstance()
         dbRef = db.getReference("users")
-        var faultyNickname: Boolean = false
+
         var list: MutableList<String> = mutableListOf()
 
         dbRef.addListenerForSingleValueEvent(object : ValueEventListener {
@@ -33,10 +32,6 @@ class RegistrationActivity : AppCompatActivity() {
                     for (i in dataSnapshot.children){
                         list.add(i.child("nickname").value.toString())
                     }
-                        println(list)
-
-                    faultyNickname = true
-
                 }
 
 
@@ -65,20 +60,29 @@ class RegistrationActivity : AppCompatActivity() {
             }
             else if (nickname.length < 3 || nickname.length > 10 ) {
                 Toast.makeText(this, "Nickname length must be between 3 and 10 characters", Toast.LENGTH_SHORT).show()
-            }else if (nickname in list){
+            }
+            else if ("@" in nickname || "." in nickname){
+                Toast.makeText(this, "Nickname cannot contain special characters '@' and '.'",Toast.LENGTH_LONG).show()
+            }
+            else if (nickname in list){
                 Toast.makeText(this, "Nickname already exists", Toast.LENGTH_LONG).show()
             }
             else{
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, OnCompleteListener { task ->
                     if (task.isSuccessful)
                     {
-                        val user = User(nickname, email)
+                        val user =
+                            User(
+                                nickname,
+                                email
+                            )
                         dbRef.child(nickname).setValue(user).addOnCompleteListener{
+                            finish()
                             Toast.makeText(this,"Registration Success!",Toast.LENGTH_LONG)
                         }
 
 
-                        finish()
+
                     }
                     else {
                         Toast.makeText(this, "Email already registered or invalid input",Toast.LENGTH_SHORT).show()

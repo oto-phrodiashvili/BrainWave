@@ -10,8 +10,8 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="376dp"
-        android:layout_height="307dp"
+        android:layout_width="426dp"
+        android:layout_height="285dp"
         android:layout_marginBottom="20dp"
         android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,79 +19,86 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
 
             <TextView
                 android:id="@+id/A"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="A"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/B"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="B"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/C"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="C"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/D"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="D"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/E"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="E"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/F"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="F"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/G"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="G"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
         </TableRow>
 
         <TableRow
@@ -101,73 +108,80 @@
 
             <TextView
                 android:id="@+id/H"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="H"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/I"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="I"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/J"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="J"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/K"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="K"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/L"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="L"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/M"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="M"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/N"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="N"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
         </TableRow>
 
         <TableRow
@@ -177,73 +191,80 @@
 
             <TextView
                 android:id="@+id/O"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="O"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/P"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="P"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/Q"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Q"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/R"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/notR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="R"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/S"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="S"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/T"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="T"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/U"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
                 android:gravity="center"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="U"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
         </TableRow>
 
         <TableRow
@@ -253,49 +274,55 @@
 
             <TextView
                 android:id="@+id/V"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:padding="15dp"
                 android:text="V"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/W"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:padding="15dp"
                 android:text="W"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/X"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:padding="15dp"
                 android:text="X"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/Y"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Y"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
 
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:padding="15dp"
+                android:text="Y"
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
 
             <TextView
                 android:id="@+id/Z"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:autoSizeMaxTextSize="28sp"
+                android:padding="15dp"
                 android:text="Z"
-                android:textColor="#D9E9D9"
-                android:textSize="45sp" />
+                android:textColor="#7AAA7A"
+                android:textSize="27sp" />
         </TableRow>
 
     </TableLayout>
@@ -304,9 +331,10 @@
         android:id="@+id/wordToGuess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="_ _ _ _ s"
+        android:layout_marginTop="60dp"
+        android:text=""
         android:textColor="#F5D3D3"
-        android:textSize="70sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
