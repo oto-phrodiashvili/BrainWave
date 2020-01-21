@@ -1,4 +1,4 @@
-package com.example.hangmanpro
+package com.example.brainwave
 
 import org.junit.Test
 

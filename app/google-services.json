@@ -1,42 +1,79 @@
 {
   "project_info": {
-    "project_number": "418231152495",
-    "firebase_url": "https://hangmanpro-a02d9.firebaseio.com",
-    "project_id": "hangmanpro-a02d9",
-    "storage_bucket": "hangmanpro-a02d9.appspot.com"
+    "project_number": "707339146524",
+    "firebase_url": "https://brainwavereg.firebaseio.com",
+    "project_id": "brainwavereg",
+    "storage_bucket": "brainwavereg.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:418231152495:android:ce6039c9fb06ebc63e029a",
+        "mobilesdk_app_id": "1:707339146524:android:68708b907b9378ef1516d9",
         "android_client_info": {
-          "package_name": "com.example.hangmanpro"
+          "package_name": "com.example.brainwave"
         }
       },
       "oauth_client": [
         {
-          "client_id": "418231152495-iqkjkfq11thcof09kt6ubq5decd569sj.apps.googleusercontent.com",
+          "client_id": "707339146524-qaiatsr08qbu2ejjdgf22epc7cgmfvtk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.hangmanpro",
-            "certificate_hash": "6ecc73cc7b008a4f1e1f63c1f4b9ebf63843d73d"
+            "package_name": "com.example.brainwave",
+            "certificate_hash": "28b6be9d71dc364b22da3f63dd3afeee102df01e"
           }
         },
         {
-          "client_id": "418231152495-qq1ap80v0cr15lojutc3vjll8o8g8lhh.apps.googleusercontent.com",
+          "client_id": "707339146524-b6viua6a93fihm66bp4uqidqipgc7n73.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyANmQCJLFYadLceBqTJsxD9C1kEhUS02kc"
+          "current_key": "AIzaSyBMaXafhLNJw2n7-aAaNoPXPfJ-Io0rbOA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "418231152495-qq1ap80v0cr15lojutc3vjll8o8g8lhh.apps.googleusercontent.com",
+              "client_id": "707339146524-b6viua6a93fihm66bp4uqidqipgc7n73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707339146524:android:513f9234d7a1b38e1516d9",
+        "android_client_info": {
+          "package_name": "ge.edu.btu.firebasehmwrk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707339146524-a3v4q6q8laimhsjq86mem72ptaoa52mj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ge.edu.btu.firebasehmwrk",
+            "certificate_hash": "28b6be9d71dc364b22da3f63dd3afeee102df01e"
+          }
+        },
+        {
+          "client_id": "707339146524-b6viua6a93fihm66bp4uqidqipgc7n73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMaXafhLNJw2n7-aAaNoPXPfJ-Io0rbOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707339146524-b6viua6a93fihm66bp4uqidqipgc7n73.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -4,53 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationActivity">
+    android:background="#515FE0"
+    tools:context="com.example.brainwave.RegistrationActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/clickRegisterConfirm"
+        android:layout_width="76dp"
+        android:layout_height="38dp"
+        android:background="@drawable/rounded_button"
+        android:text="REGISTER"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassReg"
+        app:layout_constraintVertical_bias="0.062"
+        tools:text="Register" />
 
-        <EditText
-            android:id="@+id/emailRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/enterUsernameReg"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:background="#8CB1E7"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textShortMessage"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmailReg"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <EditText
-            android:id="@+id/password1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/enterPassReg"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:background="#8CB1E7"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterUsernameReg"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <EditText
-            android:id="@+id/password2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Repeat Password"
-            android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/enterEmailReg"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:background="#8CB1E7"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="0sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
 
-        <EditText
-            android:id="@+id/inputNickname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Nickname"
-            android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
 
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REGISTER"
-            tools:text="Register" />
+    <TextView
+        android:id="@+id/clickBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#BDBDBD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="© 2020 All rights reserved | Designed by BrainWave"
+        android:textColor="#4F4F4F"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
